@@ -4,7 +4,6 @@ const CustomerRepository =  require('../services/customerrepository');
 function customerController() {
 
     async function get(req,res){
-        console.log('In the customer getter');
         requestedUser = await CustomerRepository.getAllCustomers();
         return res.status(200).send(requestedUser);   
     }

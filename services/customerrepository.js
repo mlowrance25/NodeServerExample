@@ -4,7 +4,6 @@ const CustomerModel= require('../models/customermodel');
 function customerRepository(){
 
     async function createUser(userDetails){
-        console.log('About to create a new customer');
         let newUser = new CustomerModel({
             FirstName : userDetails.FirstName,
             LastName : userDetails.LastName,
